@@ -27,23 +27,31 @@ namespace MultipleImageInOneFlipView
     public sealed partial class MainPage : Page
     {
         private ObservableCollection<MyFlipViewItem> items;
+        private ObservableCollection<MyFlipViewItem> itemsPC;
 
         public MainPage()
         {
             this.InitializeComponent();
             items = new ObservableCollection<MyFlipViewItem>();
+            itemsPC = new ObservableCollection<MyFlipViewItem>();
             flipView.ItemsSource = items;
             indicator.ItemsSource = items;
+            flipViewPC.ItemsSource = itemsPC;
+            indicatorPC.ItemsSource = itemsPC;
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             items.Clear();
-            items.Add(new MyFlipViewItem { image1 = "Assets/1.jpeg", image2 = "Assets/2.jpeg", image3 = "Assets/3.png" });
-            items.Add(new MyFlipViewItem { image1 = "Assets/1.jpeg", image2 = "Assets/2.jpeg", image3 = "Assets/3.png" });
-            items.Add(new MyFlipViewItem { image1 = "Assets/1.jpeg", image2 = "Assets/2.jpeg", image3 = "Assets/3.png" });
-            items.Add(new MyFlipViewItem { image1 = "Assets/1.jpeg", image2 = "Assets/2.jpeg", image3 = "Assets/3.png" });
-            items.Add(new MyFlipViewItem { image1 = "Assets/1.jpeg", image2 = "Assets/2.jpeg", image3 = "Assets/3.png" });
+            items.Add(new MyFlipViewItem { image1 = "Assets/11.png", image2 = "Assets/22.png", image3 = "Assets/33.png" });
+            items.Add(new MyFlipViewItem { image1 = "Assets/44.png", image2 = "Assets/66.png", image3 = "Assets/55.png" });
+
+            itemsPC.Clear();
+            itemsPC.Add(new MyFlipViewItem { imagepc = "Assets/111.png" });
+            itemsPC.Add(new MyFlipViewItem { imagepc = "Assets/222.png" });
+            itemsPC.Add(new MyFlipViewItem { imagepc = "Assets/333.png" });
+            itemsPC.Add(new MyFlipViewItem { imagepc = "Assets/444.png" });
+            itemsPC.Add(new MyFlipViewItem { imagepc = "Assets/555.png" });
         }
     }
 
@@ -52,5 +60,7 @@ namespace MultipleImageInOneFlipView
         public string image1 { get; set; }
         public string image2 { get; set; }
         public string image3 { get; set; }
+
+        public string imagepc { get; set; }
     }
 }

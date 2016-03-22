@@ -110,9 +110,17 @@
     <None Include="MultipleImageInOneFlipView_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Assets\1.jpeg" />
-    <Content Include="Assets\2.jpeg" />
-    <Content Include="Assets\3.png" />
+    <Content Include="Assets\11.PNG" />
+    <Content Include="Assets\111.PNG" />
+    <Content Include="Assets\22.PNG" />
+    <Content Include="Assets\222.PNG" />
+    <Content Include="Assets\33.PNG" />
+    <Content Include="Assets\333.PNG" />
+    <Content Include="Assets\44.PNG" />
+    <Content Include="Assets\444.PNG" />
+    <Content Include="Assets\55.PNG" />
+    <Content Include="Assets\555.PNG" />
+    <Content Include="Assets\66.PNG" />
     <Content Include="Properties\Default.rd.xml" />
     <Content Include="Assets\LockScreenLogo.scale-200.png" />
     <Content Include="Assets\SplashScreen.scale-200.png" />
